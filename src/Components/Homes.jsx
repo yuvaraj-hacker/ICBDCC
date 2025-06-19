@@ -5,7 +5,7 @@ import HelmetComponent from "./Helmet/HelmetProvider";
 function Homes() {
   return (
     <>
-      <HelmetComponent title="Home - International Journal of Advanced Trends in Robotics and Automation" />
+      {/* <HelmetComponent title="Home - International Journal of Advanced Trends in Robotics and Automation" /> */}
       <Home />
     </>
   );

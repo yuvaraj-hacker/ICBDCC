@@ -5,7 +5,7 @@ import HelmetComponent from './Helmet/HelmetProvider'
 function Abouts() {
   return (
     <>
-      <HelmetComponent title="About - International Journal of Advanced Trends in Robotics and Automation" />
+      {/* <HelmetComponent title="About - International Journal of Advanced Trends in Robotics and Automation" /> */}
       <About />
     </>
   )

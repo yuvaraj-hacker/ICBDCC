@@ -5,7 +5,7 @@ import HelmetComponent from '../Helmet/HelmetProvider'
 function PublicationPage() {
     return (
         <>
-              <HelmetComponent title="Publication Ethics - International Journal of Advanced Trends in Robotics and Automation" />
+              {/* <HelmetComponent title="Publication Ethics - International Journal of Advanced Trends in Robotics and Automation" /> */}
             <Publication />
         </>
     )

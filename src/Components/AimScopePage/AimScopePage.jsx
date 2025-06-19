@@ -5,7 +5,7 @@ import HelmetComponent from '../Helmet/HelmetProvider'
 function AimScopePage() {
     return (
         <>
-            <HelmetComponent title="Aim and Scope - International Journal of Advanced Trends in Robotics and Automation" />
+            {/* <HelmetComponent title="Aim and Scope - International Journal of Advanced Trends in Robotics and Automation" /> */}
             <AimandScope />
         </>
     )
