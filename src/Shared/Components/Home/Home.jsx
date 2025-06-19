@@ -23,18 +23,18 @@ export const Home = () => {
     },
     {
       image: '/assets/Images/members.jpg',
-      name: 'Alex Johnson',
+      name: 'Alex',
       position: 'Technical Head',
     },
   ];
 
   const date = [
     { Dates: '22-07-2025', Title: 'Full Paper Submission Deadline' },
-    { Dates: '22-07-2025', Title: 'Notification of Decision' },
-    { Dates: '22-07-2025', Title: 'Deadline for Submitting Revised Full Paper' },
-    { Dates: '22-07-2025', Title: 'Notification of Acceptance' },
-    { Dates: '22-07-2025', Title: 'Camera-Ready Paper Submission' },
-    { Dates: '22-07-2025', Title: 'Last Date for Registration / Payment' },
+    { Dates: '29-07-2025', Title: 'Notification of Decision' },
+    { Dates: '05-08-2025', Title: 'Deadline for Submitting Revised Full Paper' },
+    { Dates: '12-08-2025', Title: 'Notification of Acceptance' },
+    { Dates: '19-08-2025', Title: 'Camera-Ready Paper Submission' },
+    { Dates: '26-08-2025', Title: 'Last Date for Registration / Payment' },
   ];
 
   return (
@@ -143,7 +143,7 @@ export const Home = () => {
             {/* Key Invites Section */}
             <section className="flex flex-col md:gap-10 gap-5">
               <h1 className="bg-[#F2CB51] text-[#1B1F3B] text-center rounded-full px-6 py-2 w-fit mx-auto font-semibold lg:text-2xl text-lg">
-                Key Invites
+                Key Invitees
               </h1>
               <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 md:gap-10 gap-5">
                 {team.map((member, index) => (

@@ -7,8 +7,6 @@ function Publication() {
         <>
             <section className="flex flex-col md:gap-20 gap-10   max-w-[90rem] py-10 md:py-20  mx-auto md:px-5 px-3">
                 <div className=''>
-
-
                     <h1 className="bg-[#F2CB51] text-[#1B1F3B] text-center w-fit mx-auto rounded-full px-6 py-2 font-semibold lg:text-2xl text-lg md:mb-10 mb-5">
                         Key Dates
                     </h1>
@@ -20,30 +18,27 @@ function Publication() {
                                 event: "Full Paper Submission Deadline",
                             },
                             {
-                                date: "22-07-2025",
+                                date: "29-07-2025",
                                 event: "Notification of Decision",
                             },
                             {
-                                date: "22-07-2025",
+                                date: "05-08-2025",
                                 event: "Deadline for Submitting Revised Full Paper",
                             },
                             {
-                                date: "22-07-2025",
+                                date: "12-08-2025",
                                 event: "Notification of Acceptance",
                             },
                             {
-                                date: "22-07-2025",
+                                date: "19-08-2025",
                                 event: "Camera-Ready Paper Submission",
                             },
                             {
-                                date: "22-07-2025",
+                                date: "26-08-2025",
                                 event: "Last Date for Registration / Payment",
                             },
                         ].map((item, index) => (
-                            <div
-                                key={index}
-                                className="bg-gray-100 border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition duration-300"
-                            >
+                            <div key={index} className="bg-gray-100 border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition duration-300">
                                 <p className="text-[#1B1F3B] text-xl font-bold mb-2">{item.date}</p>
                                 <p className="text-gray-700 text-sm">{item.event}</p>
                             </div>
@@ -90,7 +85,7 @@ function Publication() {
             <section className=" ">
                 <h1 className="bg-[#3E8000] h-[4px] w-full" />
             </section>
-              <LastSection />
+            <LastSection />
 
         </>
     )

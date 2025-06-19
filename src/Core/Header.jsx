@@ -84,7 +84,7 @@ const Header = () => {
   return (
     <>
       <section className="bg-primary">
-        <div className="max-w-[90rem] mx-auto md:px-5 px-3 bg-white  border-b-black  border-b">
+        <div className="max-w-[90rem] mx-auto md:px-5 px-3 py-2 bg-white  border-b-black  border-b">
           <div className="flex items-center justify-between   lg:gap-0  gap-5  ">
             <Link to='/'>
               <div className="md:hidden block">
@@ -93,7 +93,7 @@ const Header = () => {
               </div>
             </Link>
             <div className={`md:hidden block  ${menuOpen ? "z-50" : ""}`}>
-              <Hamburger toggled={menuOpen} color="#1B1F3B" toggle={setMenuOpen} />
+              <Hamburger toggled={menuOpen} color="#1B1F3B"  toggle={setMenuOpen} />
             </div>
           </div>
         </div>
