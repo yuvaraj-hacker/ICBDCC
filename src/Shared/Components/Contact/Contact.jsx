@@ -1,0 +1,78 @@
+
+import React from 'react'
+import Contct from '../Contct/Contct'
+
+function Contact() {
+    return (
+        <>
+            <section className="max-w-screen-xl mx-auto w-full px-5 2xl:px-0  py-10 md:py-20 ">
+                <div className="lg:flex md:flex  gap-8 ">
+                    <div className="max-w-full w-full ">
+                        <div className="lg:max-w-3xl max-w-xl w-full mx-auto  ">
+                            <div className="  :bg-gray-900 lg:px-20   md:px-5     ">
+                                <div className=' text-center mx-auto flex justify-center  md:mb-10 mb-5 '>
+                                    <h1 className="  text-center py-2 bg-[#F2CB51] px-6  text-[#1B1F3B] rounded-full
+                                     font-semibold  lg:text-2xl   text-lg ">
+                                        Contact
+                                    </h1>
+                                </div>
+                                <div className="    mx-auto max-w-screen-md  bg-[#1B1F3B] md:p-6  rounded-xl  p-3 ">
+
+                                    <form className="w-full space-y-4  " ngNativeValidate>
+                                        <div>
+                                            <label for="email" className="block mb-2 text-sm   text-white   mt-4 ">
+                                                Name
+                                            </label>
+                                            <input type="text" name="name" id="name" ngModel className="shadow-sm   border border-[#fff] text-white text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4        "
+                                                placeholder="Enter Your Name" required
+                                            />
+                                        </div>
+                                        <div>
+                                            <label for="email" className="block mb-2 text-sm   text-white   mt-4  ">
+                                                Email
+                                            </label>
+                                            <input type="email" name="email" id="email" ngModel className="shadow-sm  border border-[#fff] text-white text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4 "
+                                                placeholder="name@gmail.com" required />
+                                        </div>
+                                        <div>
+                                            <label for="email" className="block mb-2 text-sm   text-white   mt-4 "  >
+                                                Contact Number
+                                            </label>
+                                            <input type="text" name="number" id="number" ngModel className="shadow-sm  border border-[#fff] text-white text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4  "
+                                                placeholder="Enter Your Mobile Number" required
+                                            />
+                                        </div>
+                                        <div className="sm:col-span-2 mt-4">
+                                            <label for="message" className="block mb-2 text-sm text-white">
+                                                Your Message
+                                            </label>
+                                            <textarea id="message" name="message" ngModel
+                                                rows="4"
+                                                className="block p-2.5 w-full text-sm text-white    shadow-sm border border-[#fff] focus:ring-primary-500 focus:border-primary-500   mt-4 "
+                                                placeholder="Leave a Message..."
+                                            ></textarea>
+                                        </div>
+                                        <div className="text-center md:mt-0 mt-5 ">
+                                            <button type="submit" className="py-3 px-5 text-sm  bg-primary-blue-color  text-center   bg-[#14AE5C]   cursor-pointer hover:text-primary-blue-color  text-white   bg-primary-red-color sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300    " >
+                                                Send message
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section className=" ">
+                <h1 className="bg-[#3E8000] h-[4px] w-full" />
+            </section>
+            <Contct />
+        </>
+    )
+}
+
+export default Contact
+
