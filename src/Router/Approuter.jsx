@@ -7,7 +7,7 @@ import AimScopePage from "../Components/AimScopePage/AimScopePage";
 import GuidelinePage from "../Components/AuthorGuidelinePage/GuidelinePage";
 import PeerPage from "../Components/PeerReviewPage/PeerPage";
 import PublicationPage from "../Components/PublicationPage/PublicationPage";
-import AbstractingPage from "../Components/AbstractingPage/AbstractingPAge";
+import AbstractingPage from "../Components/AbstractingPage/AbstractingPage";
 import ArticlePage from "../Components/ArticleProcessPage/ArticlePage";
 import PlagiarismPage from "../Components/PlagiarismPage/PlagiarismPage";
 import MalPracticePage from "../Components/MalPracticePage/MalPracticePage";
