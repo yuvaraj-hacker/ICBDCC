@@ -11,20 +11,15 @@ function About() {
           <div className='col-span-2'>
             <h1 className="bg-[#F2CB51] text-[#1B1F3B] text-center w-fit mx-auto rounded-full px-6 py-2 font-semibold lg:text-2xl text-lg">
               About the Conference
-              </h1>
+            </h1>
             {/* <img className="h-72 mx-auto" src="/assets/Images/27211.jpg" alt="" /> */}
             <div className="relative group max-w-md mx-auto overflow-hidden  ">
-              <img
-                className="h-72 w-full object-contain transform transition duration-500  scale-105"
-                src="/assets/Images/27211.jpg"
-                alt="Conference Visual"
-              />
+              <img className="h-72 w-full object-contain transform transition duration-500  scale-105" src="/assets/Images/27211.jpg" alt="Conference Visual" />
               {/* Optional Overlay Content */}
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 opacity-100 transition duration-500">
-                <p className="text-white text-sm font-medium text-center"  data-aos="fade-up" >Discover Innovations in Big Data & Cloud</p>
+                <p className="text-white text-sm font-medium text-center" data-aos="fade-up" >Discover Innovations in Big Data & Cloud</p>
               </div>
             </div>
-    
           </div>
           <div className="col-span-3 flex flex-col space-y-4">
             <p className="text-justify md:text-lg text-sm leading-7">
@@ -38,16 +33,14 @@ function About() {
           <h1 className="bg-[#F2CB51] text-[#1B1F3B] text-center w-fit mx-auto rounded-full px-6 py-2 font-semibold lg:text-2xl text-lg md:mb-10 mb-5" >
             Scope of the Conference
           </h1>
-
           <div className="  mx-auto   text-justify text-gray-700 space-y-4 text-sm md:text-lg leading-7">
             <p className='leading-7'>
               The International Conference on Big Data and Cloud Computing (ICBDCC) aims to explore the transformative impact of big data technologies and cloud infrastructure on various domains. The conference provides a global platform for researchers, academicians, and professionals to present and discuss innovative advancements, practical applications, and future trends.
             </p>
-
             <ul className="list-disc list-inside space-y-2">
               <li>
                 Big Data frameworks, tools, and platforms for real-time and batch processing.
-              </li>
+               </li>
               <li>
                 Cloud computing architectures, virtualization, and resource management.
               </li>
@@ -84,7 +77,7 @@ function About() {
       <section className=" ">
         <h1 className="bg-[#3E8000] h-[4px] w-full" />
       </section>
-            <LastSection />
+      <LastSection />
 
     </>
   )

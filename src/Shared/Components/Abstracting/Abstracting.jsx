@@ -1,8 +1,22 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import Contct from '../Contct/Contct'
 
 function Abstracting() {
+    const [uploadFile, setUploadFile] = useState(null);
+
+    const handlefileChange = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            setUploadFile(file);
+        }
+    }
+    const handleRemoveFile = () => {
+        setUploadFile(null);
+        document.getElementById("upload-paper").value = ""; // Clear input
+    };
+
+
     return (
         <>
             <section className="max-w-screen-xl mx-auto w-full px-5 2xl:px-0  py-10 md:py-20 ">
@@ -81,38 +95,28 @@ function Abstracting() {
                                                 <label for="email" className="block mb-2 text-sm   text-white   mt-4 "  >
                                                     Institution Name
                                                 </label>
-                                                <input type="text" name="number" id="number" ngModel className="shadow-sm bg-white border border-[#fff] text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4  "
-                                                    placeholder="Enter Your Mobile Number" required
-                                                />
+                                                <input type="text" name="number" id="number" ngModel className="shadow-sm bg-white border border-[#fff] text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 mt-4" placeholder="Enter Your Mobile Number" required />
                                             </div>
                                             <div className="md:col-span-2 mt-5">
                                                 <label className="block mb-2 text-sm text-white">Upload Paper</label>
-
                                                 <div className="flex flex-col items-center justify-center w-full h-48 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer bg-white hover:border-[#6366f1] transition duration-300">
-                                                    <input
-                                                        type="file"
-                                                        accept=".pdf,.doc,.docx"
-                                                        id="upload-paper"
-                                                        name="paper"
-                                                        className="hidden"
-                                                        onChange={(e) => console.log(e.target.files[0])}
-                                                    />
+                                                    <input type="file" accept=".pdf,.doc,.docx" id="upload-paper" name="paper" className="hidden" onChange={handlefileChange} />
                                                     <label htmlFor="upload-paper" className="flex flex-col items-center justify-center w-full h-full text-center">
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            className="w-10 h-10 text-indigo-600 mb-2"
-                                                            fill="none"
-                                                            viewBox="0 0 24 24"
-                                                            stroke="currentColor"
-                                                        >
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-indigo-600 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"   >
                                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M16 12l-4-4m0 0l-4 4m4-4v12" />
                                                         </svg>
                                                         <p className="text-gray-700">Click or Drag to Upload Paper</p>
                                                     </label>
                                                 </div>
                                             </div>
-
-
+                                            {uploadFile && (
+                                                <div className="mt-4 bg-white p-3 rounded shadow flex justify-between items-center">
+                                                    <div className="text-sm text-gray-800 truncate w-full pr-4">{uploadFile.name}</div>
+                                                    <button onClick={handleRemoveFile} className="text-red-500 hover:text-red-700 transition cursor-pointer" title="Remove file"   >
+                                                        ✕
+                                                    </button>
+                                                </div>
+                                            )}
                                             <div className="text-center mx-auto mt-5  md:col-span-2">
                                                 <button type="submit" className="py-3 px-5 text-sm  bg-primary-blue-color  text-center   bg-[#14AE5C]   cursor-pointer hover:text-primary-blue-color  text-white   bg-primary-red-color sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300    " >
                                                     Submit
