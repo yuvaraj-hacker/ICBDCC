@@ -84,8 +84,7 @@ function Contact() {
                                                 Contact Number
                                             </label>
                                             <input type="text" name="number" id="number" onChange={handleChange} value={formData.number} ngModel className="shadow-sm  border   text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4  "
-                                                placeholder="Enter Your Mobile Number" required
-                                            />
+                                                placeholder="Enter Your Mobile Number" required />
                                         </div>
                                         <div className="sm:col-span-2 mt-4">
                                             <label for="message" className="block mb-2 text-sm ">
