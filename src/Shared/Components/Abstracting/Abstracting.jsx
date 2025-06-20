@@ -115,7 +115,7 @@ function Abstracting() {
                                                 <label for="paperTitle" className="block mb-2 text-sm   text-[#1B1F3B]   mt-4 ">
                                                     Paper Title
                                                 </label>
-                                                <input type="text" ngModel id="paperTitle" name="paperTitle" value={formData.paperTitle} onChange={handleChange} className="shadow-sm bg-white  border  text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4" placeholder="Enter Your Name" required />
+                                                <input type="text" ngModel id="paperTitle" name="paperTitle" value={formData.paperTitle} onChange={handleChange} className="shadow-sm bg-white  border  text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4" placeholder="Enter the Paper Title" required />
                                             </div>
                                             <div>
                                                 <label for="name" className="block mb-2 text-sm text-[#1B1F3B] mt-4">
@@ -143,11 +143,11 @@ function Abstracting() {
                                                 <label for="institution" className="block mb-2 text-sm   text-[#1B1F3B]   mt-4 "  >
                                                     Institution Name
                                                 </label>
-                                                <input type="text" name="institution" id="institution" value={formData.institution} ngModel onChange={handleChange} className="shadow-sm bg-white border  text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 mt-4" placeholder="Enter Your Mobile Number" required />
+                                                <input type="text" name="institution" id="institution" value={formData.institution} ngModel onChange={handleChange} className="shadow-sm bg-white border  text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 mt-4" placeholder="Enter Your Institute" required />
                                             </div>
                                             <div>
                                                 <label for="institution" className="block mb-2 text-sm   text-[#1B1F3B]   mt-4 "  >
-                                                    Institution Name
+                                                    Paper Track
                                                 </label>
                                                 <select name="Paper_Track" id="Paper_Track" value={formData.Paper_Track || ""}
                                                     onChange={handleChange}
@@ -166,8 +166,8 @@ function Abstracting() {
                                                     <option value="DevOps">DevOps and Cloud Infrastructure</option>
                                                     <option value="5G">5G and Cloud Integration</option>
                                                     <option value="QuantumComputing">Quantum Computing in Cloud</option>
-
-                                                </select>                                            </div>
+                                                </select>
+                                            </div>
 
                                             <div className="md:col-span-2 mt-5">
                                                 <label className="block mb-2 text-sm text-[#1B1F3B]">Upload Paper</label>
