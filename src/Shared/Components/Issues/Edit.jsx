@@ -51,7 +51,6 @@ function Edit({ position, Name, location }) {
                     {/* Decorative line */}
                     {/* <div className="w-12 h-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto opacity-60 -hover:w-16 -hover:opacity-100 transition-all duration-300"></div> */}
                 </div>
-
                 {/* Corner decoration */}
                 {/* <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-bl-full transform translate-x-6 -translate-y-6 -hover:scale-110 transition-transform duration-500"></div> */}
             </div>
