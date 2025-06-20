@@ -7,7 +7,6 @@ function Contact() {
 
     const [formData, setFormData] = useState({ name: "", email: "", number: "", message: "" });
     const [status, setStatus] = useState('');
-
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
@@ -22,8 +21,6 @@ function Contact() {
             formDataToSend.append('email', formData.email);
             formDataToSend.append('number', formData.number);
             formDataToSend.append('message', formData.message);
-
-
             const response = await fetch('http://192.168.29.175/my-react-app/message_mail.php', {
                 method: 'POST',
                 body: formDataToSend,
@@ -67,7 +64,7 @@ function Contact() {
                                 <div className="mx-auto max-w-screen-md   border-2   md:p-6  rounded-xl  p-3 ">
                                     <form onSubmit={handleSubmit} className="w-full space-y-4  " ngNativeValidate>
                                         <div>
-                                            <label for="email" className="block mb-2 text-sm      mt-4 ">
+                                            <label for="email" className="block mb-2 text-sm mt-4 ">
                                                 Name
                                             </label>
                                             <input type="text" name="name" id="name"
@@ -76,7 +73,7 @@ function Contact() {
                                                 ngModel className="shadow-sm   border text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  mt-4" placeholder="Enter Your Name" required />
                                         </div>
                                         <div>
-                                            <label for="email" className="block mb-2 text-sm      mt-4  ">
+                                            <label for="email" className="block mb-2 text-sm mt-4">
                                                 Email
                                             </label>
                                             <input type="email" name="email" id="email" onChange={handleChange} value={formData.email} ngModel className="shadow-sm  border   text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4 "
@@ -99,7 +96,7 @@ function Contact() {
                                                 onChange={handleChange}
                                                 ngModel
                                                 rows="4"
-                                                className="block p-2.5 w-full text-sm     shadow-sm border  focus:ring-primary-500 focus:border-primary-500   mt-4 "
+                                                className="block p-2.5 w-full text-sm shadow-sm border  focus:ring-primary-500 focus:border-primary-500   mt-4 "
                                                 placeholder="Leave a Message..."
                                             ></textarea>
                                         </div>
