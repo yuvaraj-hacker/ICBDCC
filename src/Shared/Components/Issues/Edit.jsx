@@ -28,26 +28,22 @@ function Edit({ position, Name, location }) {
                         {/* Animated ring */}
                         <div className="absolute -inset-1 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full opacity-0 -hover:opacity-30  "></div>
                     </div>
-
                     {/* Name */}
                     <div>
                         <h3 className="md:text-lg font-bold text-gray-800 -hover:text-blue-600 transition-colors duration-300">
                             {Name}
                         </h3>
                     </div>
-
                     {/* Position */}
                     <div className="flex items-center justify-center gap-2 text-gray-600">
                         <Briefcase className="w-4 h-4 text-blue-500" />
                         <p className="text-sm font-medium">{position}</p>
                     </div>
-
                     {/* Location */}
                     <div className="flex items-center justify-center gap-2 text-gray-500">
                         <MapPin className="w-4 h-4 text-[#14AE5C]" />
                         <p className="text-sm">{location}</p>
                     </div>
-
                     {/* Decorative line */}
                     {/* <div className="w-12 h-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto opacity-60 -hover:w-16 -hover:opacity-100 transition-all duration-300"></div> */}
                 </div>
