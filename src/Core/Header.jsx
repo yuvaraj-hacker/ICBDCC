@@ -84,7 +84,7 @@ const Header = () => {
   return (
     <>
       <section className="bg-primary">
-        <div className="max-w-[90rem] mx-auto md:px-5 px-3 py-2 bg-white  border-b-black  border-b">
+        <div className="max-w-[90rem] mx-auto md:px-5 px-3 md:py-0 py-2 bg-white  border-b-black  border-b">
           <div className="flex items-center justify-between   lg:gap-0  gap-5  ">
             <Link to='/'>
               <div className="md:hidden block">
@@ -93,7 +93,7 @@ const Header = () => {
               </div>
             </Link>
             <div className={`md:hidden block  ${menuOpen ? "z-50" : ""}`}>
-              <Hamburger toggled={menuOpen} color="#1B1F3B"  toggle={setMenuOpen} />
+              <Hamburger toggled={menuOpen} color="#1B1F3B" toggle={setMenuOpen} />
             </div>
           </div>
         </div>
@@ -139,11 +139,11 @@ const Header = () => {
               {/* <div className="text-black font-bold md:block hidden">ICBDCC</div> */}
             </Link>
             <nav ref={dropdownRef}>
-              <div className={`space-x-1 md:block max-w-[65rem] mx-auto relative md:pt-0  pt-20  ${menuOpen ? "flex flex-col space-y-4" : " "}`}>
+              <div className={`space-x-1 md:block max-w-[65rem] mx-auto  md:pt-0  pt-20  ${menuOpen ? "flex flex-col space-y-4" : " "}`}>
                 {navLinks.map((link) => (
                   <div
                     key={link.to}
-                    className="  inline-block group"
+                    className="  inline-block group relative"
                     // onMouseEnter={() => handleMouseEnter(link.label)}
                     // onMouseLeave={handleMouseLeave}
                     onMouseEnter={() => window.innerWidth >= 768 && handleMouseEnter(link.label)}
@@ -156,17 +156,9 @@ const Header = () => {
                       )}
                     </Link>
                     {hoveredCategory === link.label && link.dropdown && (
-                      <div className="md:absolute left-0 top-full   w-full md:bg-white  border-[#1B1F3B]  transition-all duration-300 ease-in-out opacity-100 scale-y-100 origin-top  grid md:grid-cols-2 border md:p-3 z-10">
+                      <div className="md:absolute left-0 top-full   md:w-72 md:bg-white  border-[#1B1F3B]  transition-all duration-300 ease-in-out opacity-100 scale-y-100 origin-top  grid md:grid-cols-1 border md:p-3 z-10">
                         {link.dropdown.map((dropdownlink) => (
-                          <Link
-                            key={dropdownlink.to}
-                            to={dropdownlink.to}
-                            className="block md:px-4 px-2 py-2 md:text-[#1B1F3B]  md:text-start text-center    underline underline-offset-2 text-[#1B1F3B]"
-                            onClick={() => {
-                              setHoveredCategory(null);
-                              setMenuOpen(false);
-                            }}
-                          >
+                          <Link key={dropdownlink.to} to={dropdownlink.to} className="block md:px-4 px-2 py-2 md:text-[#1B1F3B]  md:text-start text-center    underline underline-offset-2 text-[#1B1F3B]" onClick={() => { setHoveredCategory(null); setMenuOpen(false); }} >
                             {dropdownlink.label}
                           </Link>
                         ))}

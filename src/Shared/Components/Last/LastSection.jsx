@@ -40,10 +40,12 @@ function LastSection() {
                     </div>
 
                     <div className="flex flex-col gap-4 px-3">
-                        <p className="text-center p-2 bg-[#1B1F3B] rounded-xl text-white md:text-lg text-sm ">Join leading researchers, academics, and industry experts from around the world. Be part of the future of Big Data and Cloud innovation.</p>
+                        <p className="text-center md:p-4 p-3 bg-[#1B1F3B] rounded-xl text-white md:text-lg text-sm  relative overflow-hidden">
+                            <div className="absolute -top-2 -right-1 w-0 h-0 border-t-[40px] border-r-[40px] border-t-[#F2CB51] border-r-transparent rounded-tr-xl 2xl:block hidden"></div>
+                            Join leading researchers, academics, and industry experts from around the world. Be part of the future of Big Data and Cloud innovation.</p>
                         <div className="text-center">
                             <Link to='/paper-submission'>
-                                   <button className="py-2 bg-[#14AE5C] px-6 text-white mx-auto cursor-pointer md:text-lg   hover:border border   text-sm hover:duration-300 hover:border-[#F2CB51] border-[#F2CB51] hover:border-dashed">Register</button>
+                                <button className="py-2 bg-[#14AE5C] px-6 text-white mx-auto cursor-pointer md:text-lg   hover:border border   text-sm hover:duration-300 hover:border-[#F2CB51] border-[#F2CB51] hover:border-dashed">Register</button>
                             </Link>
                         </div>
                     </div>

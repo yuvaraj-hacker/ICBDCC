@@ -30,7 +30,7 @@ function EditorialBoard({ position, Name, location }) {
                 </div>
             </section>
             <section className=" ">
-                <h1 className="bg-[#3E8000] h-[4px] w-full" />
+                <h1 className="bg-[#3E8000] h-[2px] w-full" />
             </section>
                 <LastSection />
 

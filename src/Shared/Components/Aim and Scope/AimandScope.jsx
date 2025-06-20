@@ -28,7 +28,7 @@ function AimandScope() {
                         </div>
 
                         <div className="col-span-3 flex flex-col space-y-4">
-                            <p className="text-justify md:text-lg text-sm leading-7">
+                            <p className="text-justify md:text-base text-sm leading-7">
                                 The International Conference on Big Data and Cloud Computing (ICBDCC)
                                 aims to provide a comprehensive platform for researchers, practitioners,
                                 and academicians to explore the vast and evolving landscape of data-centric
@@ -36,7 +36,7 @@ function AimandScope() {
                                 theoretical foundations, practical implementations, and innovative
                                 applications that address modern challenges in computing, connectivity, and intelligence.
                             </p>
-                            <p className="text-justify md:text-lg text-sm leading-7">
+                            <p className="text-justify md:text-base text-sm leading-7">
                                 ICBDCC provides a dynamic forum for discussing cutting-edge innovations,
                                 challenges, and future trends in the data-driven world. The conference
                                 fosters collaboration and promotes interdisciplinary research across key
@@ -48,14 +48,14 @@ function AimandScope() {
                 </section>
                 {/* Detailed Topics Section */}
                 <section className="flex flex-col gap-4">
-                    <p className="md:text-lg text-sm text-justify leading-7">
+                    <p className="md:text-base text-sm text-justify leading-7">
                         The conference focuses on innovations in managing and analyzing massive datasets.
                         Topics include data mining, real-time analytics, data lakes, and high-performance computing.
                         Emphasis is placed on scalable architectures and distributed data processing tools like Hadoop and Spark.
                         Research on data cleaning, integration, and visualization is also welcomed.
                         Applications in healthcare, finance, social media, and more are encouraged.
                     </p>
-                    <p className="md:text-lg text-sm text-justify leading-7">
+                    <p className="md:text-base text-sm text-justify leading-7">
                         Explore the latest advancements in cloud service models such as IaaS, PaaS, and SaaS.
                         Topics include resource allocation, virtualization, cloud automation, and orchestration.
                         Sessions will highlight edge computing, fog computing, and hybrid cloud environments.
@@ -67,7 +67,7 @@ function AimandScope() {
 
 
             <section className=" ">
-                <h1 className="bg-[#3E8000] h-[4px] w-full" />
+                <h1 className="bg-[#3E8000] h-[2px] w-full" />
             </section>
             <LastSection />
 

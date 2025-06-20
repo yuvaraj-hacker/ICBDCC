@@ -25,19 +25,14 @@ function Issues({ position, Name, location }) {
                 </h1>
                 <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
                     {Tech.map((member, index) => (
-                        <Edit
-                            key={index}
-                            position={member.position}
-                            Name={member.Name}
-                            location={member.location}
-                        />
+                        <Edit key={index} position={member.position} Name={member.Name} location={member.location} />
                     ))}
                 </div>
             </section>
             <section className=" ">
-                <h1 className="bg-[#3E8000] h-[4px] w-full" />
+                <h1 className="bg-[#3E8000] h-[2px] w-full" />
             </section>
-                <LastSection />
+            <LastSection />
 
         </>
     )

@@ -62,14 +62,14 @@ function PeerReview() {
                         },
                     ].map((track, index) => (
                         <div key={index} className="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition duration-300 border border-gray-100"  >
-                            <h2 className=" font-semibold text-[#333] mb-2 md:text-xl text-lg">{track.title}</h2>
-                            <p className="text-sm text-gray-600 md:text-lg">{track.desc}</p>
+                            <h2 className=" font-semibold text-[#333] mb-2 md:text-lg text-base">{track.title}</h2>
+                            <p className="text-sm text-gray-600 md:text-base">{track.desc}</p>
                         </div>
                     ))}
                 </div>
             </section>
             <section className=" ">
-                <h1 className="bg-[#3E8000] h-[4px] w-full" />
+                <h1 className="bg-[#3E8000] h-[2px] w-full" />
             </section>
             <LastSection />
 

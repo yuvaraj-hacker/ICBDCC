@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Contct from '../Contct/Contct'
 
 function Abstracting() {
+    const [formData, setFormData] = useState({ paperTitle: "", name: "", email: "", number: "", institution: "", });
     const [uploadFile, setUploadFile] = useState(null);
 
     const handlefileChange = (e) => {
@@ -16,6 +17,28 @@ function Abstracting() {
         document.getElementById("upload-paper").value = ""; // Clear input
     };
 
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const form = new FormData();
+        form.append("paperTitle", formData.paperTitle);
+        form.append("name", formData.name);
+        form.append("email", formData.email);
+        form.append("number", formData.number);
+        form.append("institution", formData.institution);
+        if (uploadFile) { form.append("paper", uploadFile); }
+        try {
+            const res = await fetch("http://192.168.29.175/MY-REACT-APP/send_mail.php", { method: "POST", body: form, });
+            const result = await res.text();
+            alert(result);
+        } catch (error) {
+            console.error("Error submitting form", error);
+            alert("Submission failed");
+        }
+    };
 
     return (
         <>
@@ -59,12 +82,12 @@ function Abstracting() {
                             <div className="lg:max-w-4xl max-w-xl w-full mx-auto col-span-2 ">
                                 <div className="  :bg-gray-900 lg:px-20   md:px-5   ">
                                     <div className="    mx-auto max-w-screen-xl  bg-[#1B1F3B] md:p-6  rounded-xl  p-3 ">
-                                        <form className="w-full   grid lg:grid-cols-2 grid-cols-1 md:gap-5" ngNativeValidate>
+                                        <form className="w-full   grid lg:grid-cols-2 grid-cols-1 md:gap-5" ngNativeValidate onSubmit={handleSubmit}>
                                             <div className='md:col-span-2'>
                                                 <label for="email" className="block mb-2 text-sm   text-white   mt-4 ">
                                                     Paper Title
                                                 </label>
-                                                <input type="text" name="name" id="name" ngModel className="shadow-sm bg-white  border border-[#fff] text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4        "
+                                                <input type="text" name="name" id="name" ngModel onChange={handleChange} className="shadow-sm bg-white  border border-[#fff] text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4        "
                                                     placeholder="Enter Your Name" required
                                                 />
                                             </div>
@@ -72,7 +95,7 @@ function Abstracting() {
                                                 <label for="email" className="block mb-2 text-sm text-white mt-4">
                                                     Name
                                                 </label>
-                                                <input type="text" name="name" id="name" ngModel className="shadow-sm bg-white  border border-[#fff] text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4        "
+                                                <input type="text" name="name" id="name" ngModel onChange={handleChange} className="shadow-sm bg-white  border border-[#fff] text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4        "
                                                     placeholder="Enter Your Name" required
                                                 />
                                             </div>
@@ -80,14 +103,14 @@ function Abstracting() {
                                                 <label for="email" className="block mb-2 text-sm   text-white   mt-4  ">
                                                     Email
                                                 </label>
-                                                <input type="email" name="email" id="email" ngModel className="shadow-sm bg-white border border-[#fff] text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4 "
+                                                <input type="email" name="email" id="email" ngModel onChange={handleChange} className="shadow-sm bg-white border border-[#fff] text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4 "
                                                     placeholder="name@gmail.com" required />
                                             </div>
                                             <div>
                                                 <label for="email" className="block mb-2 text-sm   text-white   mt-4 "  >
                                                     Contact Number
                                                 </label>
-                                                <input type="text" name="number" id="number" ngModel className="shadow-sm bg-white    border border-[#fff] text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4  "
+                                                <input type="text" name="number" id="number" ngModel onChange={handleChange} className="shadow-sm bg-white    border border-[#fff] text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4  "
                                                     placeholder="Enter Your Mobile Number" required
                                                 />
                                             </div>
@@ -95,7 +118,7 @@ function Abstracting() {
                                                 <label for="email" className="block mb-2 text-sm   text-white   mt-4 "  >
                                                     Institution Name
                                                 </label>
-                                                <input type="text" name="number" id="number" ngModel className="shadow-sm bg-white border border-[#fff] text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 mt-4" placeholder="Enter Your Mobile Number" required />
+                                                <input type="text" name="number" id="number" ngModel onChange={handleChange} className="shadow-sm bg-white border border-[#fff] text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 mt-4" placeholder="Enter Your Mobile Number" required />
                                             </div>
                                             <div className="md:col-span-2 mt-5">
                                                 <label className="block mb-2 text-sm text-white">Upload Paper</label>
@@ -118,13 +141,12 @@ function Abstracting() {
                                                 </div>
                                             )}
                                             <div className="text-center mx-auto mt-5  md:col-span-2">
-                                                <button type="submit" className="py-3 px-5 text-sm  bg-primary-blue-color  text-center   bg-[#14AE5C]   cursor-pointer hover:text-primary-blue-color  text-white   bg-primary-red-color sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300    " >
+                                                <button type="submit" className="py-3 px-5 text-sm  bg-primary-blue-color  text-center hover:border border hover:duration-300 hover:border-[#F2CB51] border-[#F2CB51] hover:border-dashed  bg-[#14AE5C]   cursor-pointer hover:text-primary-blue-color  text-white   bg-primary-red-color sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300    " >
                                                     Submit
                                                 </button>
                                             </div>
                                         </form>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -133,7 +155,7 @@ function Abstracting() {
                 </div>
             </section>
             <section className=" ">
-                <h1 className="bg-[#3E8000] h-[4px] w-full" />
+                <h1 className="bg-[#3E8000] h-[2px] w-full" />
             </section>
             <Contct />
         </>
