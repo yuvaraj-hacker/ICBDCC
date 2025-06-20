@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Approuter from "./Router/Approuter";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { ToastContainer } from "react-toastify";
 
 function App() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <Approuter />
+        <ToastContainer />
       {/* Example content
       <section>
         <div>

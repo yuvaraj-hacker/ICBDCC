@@ -14,7 +14,7 @@ use PHPMailer\PHPMailer\SMTP;
 
 require_once realpath(__DIR__ . "/vendor/autoload.php");
 
-$required_fields = ['paperTitle', 'name', 'email', 'number', 'institution', 'Paper_Track'];
+$required_fields = ['name', 'email', 'number', 'message',];
 $missing_fields = [];
 
 foreach ($required_fields as $field) {
@@ -44,8 +44,8 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
-    $mail->setFrom('yuvarajtcz01@gmail.com', 'Paper Submission System');
-    $mail->addAddress('yuvarajtcz01@gmail.com', 'Paper Submissions');
+    $mail->setFrom('yuvarajtcz01@gmail.com', 'Enquiry');
+    $mail->addAddress('yuvarajtcz01@gmail.com', 'Enquiry');
 
     $mail->addReplyTo($_POST['email'], $_POST['name']);
 
@@ -72,17 +72,13 @@ try {
     }
 
     $mail->isHTML(true);
-    $mail->Subject = 'New Paper Submission - ' . htmlspecialchars($_POST['paperTitle']);
+    $mail->Subject = 'Enquiry';
     $mail->Body = '
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px;">
-            <h2 style="color: #0B4F8E; border-bottom: 2px solid #287B86; padding-bottom: 10px;">New Paper Submission</h2>
+            <h2 style="color: #0B4F8E; border-bottom: 2px solid #287B86; padding-bottom: 10px;">New Enquiry</h2>
               <table style="width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 15px;">
-        <tr style="background-color: #f0f4f7;">
-            <td style="padding: 12px 15px; border: 1px solid #dee2e6; font-weight: 600; width: 35%;">Paper Title</td>
-            <td style="padding: 12px 15px; border: 1px solid #dee2e6;">' . htmlspecialchars($_POST['paperTitle']) . '</td>
-        </tr>
         <tr>
-            <td style="padding: 12px 15px; border: 1px solid #dee2e6; font-weight: 600;">Author Full Name</td>
+            <td style="padding: 12px 15px; border: 1px solid #dee2e6; font-weight: 600;">Name</td>
             <td style="padding: 12px 15px; border: 1px solid #dee2e6;">' . htmlspecialchars($_POST['name']) . '</td>
         </tr>
         <tr style="background-color: #f0f4f7;">
@@ -94,40 +90,28 @@ try {
             <td style="padding: 12px 15px; border: 1px solid #dee2e6;">' . htmlspecialchars($_POST['email']) . '</td>
         </tr>
         <tr style="background-color: #f0f4f7;">
-            <td style="padding: 12px 15px; border: 1px solid #dee2e6; font-weight: 600;">Institution Name</td>
-            <td style="padding: 12px 15px; border: 1px solid #dee2e6;">' . htmlspecialchars($_POST['institution']) . '</td>
-        </tr>
-        <tr>
-            <td style="padding: 12px 15px; border: 1px solid #dee2e6; font-weight: 600;">Paper Track</td>
-            <td style="padding: 12px 15px; border: 1px solid #dee2e6;">' . htmlspecialchars($_POST['Paper_Track']) . '</td>
+            <td style="padding: 12px 15px; border: 1px solid #dee2e6; font-weight: 600;">Message</td>
+            <td style="padding: 12px 15px; border: 1px solid #dee2e6;">' . htmlspecialchars($_POST['message']) . '</td>
         </tr>
     </table>
-            <div style="margin-top: 20px; padding: 15px; background-color: #e8f4f8; border-left: 4px solid #287B86;">
-                <p style="margin: 0;"><strong>File Status:</strong> ' . ($file_attached ? 'Paper file has been attached to this email.' : 'No file was uploaded or file upload failed.') . '</p>
-            </div>
-
             <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 12px; color: #666;">
-                <p>Submission Time: ' . date('Y-m-d H:i:s') . '</p>
+                <p>Enquiry Time: ' . date('Y-m-d H:i:s') . '</p>
             </div>
         </div>
     ';
 
-    $mail->AltBody = "New Paper Submission\n\n" .
-        "Paper Title: " . $_POST['paperTitle'] . "\n" .
-        "Author Full Name: " . $_POST['name'] . "\n" .
+    $mail->AltBody = "Enquiry\n\n" .
+        "Name: " . $_POST['name'] . "\n" .
         "Mobile Number: " . $_POST['number'] . "\n" .
         "Email Address: " . $_POST['email'] . "\n" .
-        "Institution Name: " . $_POST['institution'] . "\n" .
-        "Paper Track: " . $_POST['paper'] . "\n\n" .
-        "File Status: " . ($file_attached ? "File attached" : "No file uploaded") . "\n" .
-        "Submission Time: " . date('Y-m-d H:i:s');
+        "Message: " . $_POST['message'] . "\n" .
 
-    error_log("Attempting to send email...");
+        error_log("Attempting to send email...");
     $result = $mail->send();
     error_log("Email send result: " . ($result ? "SUCCESS" : "FAILED"));
 
     if ($result) {
-        echo 'Paper submission sent successfully!';
+        echo 'sent successfully!';
     } else {
         echo 'Email sending failed but no exception thrown.';
     }
