@@ -80,7 +80,7 @@ export const Home = () => {
                   Submit Now
                 </button>
               </Link> */}
-              <Link to="/contact">
+              <Link to="/paper-submission">
                 <button className="py-2 bg-[#14AE5C]
                  px-6 text-white duration-300 md:text-base text-sm cursor-pointer md:w-[170px] rounded-full hover:border border hover:duration-300 hover:border-[#F2CB51] border-[#F2CB51] hover:border-dashed">
                   Register Now

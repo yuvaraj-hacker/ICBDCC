@@ -72,7 +72,7 @@ function Abstracting() {
         <>
             <section className="max-w-screen-xl mx-auto w-full px-5 2xl:px-0  py-10 md:py-20 ">
                 <div className="lg:flex md:flex  gap-8 ">
-                    <div className="max-w-[90rem] mx-auto w-full ">
+                    <div className="max-w-[70rem] mx-auto w-full ">
                         <div className=' text-center mx-auto flex justify-center md:mb-10 mb-5'>
                             <h1 className="  text-center py-2 w-fit bg-[#F2CB51] px-6  text-[#1B1F3B] rounded-full  font-semibold  lg:text-2xl   text-lg ">
                                 New Paper Submission
@@ -107,8 +107,8 @@ function Abstracting() {
                                 </div>
                             </div>
 
-                            <div className="lg:max-w-4xl max-w-xl w-full mx-auto col-span-2 ">
-                                <div className="  :bg-gray-900 lg:px-20   md:px-5   ">
+                            <div className="  w-full ml-auto col-span-2 ">
+                                <div className="  :bg-gray-900   ml-auto w-full  ">
                                     <div className="    mx-auto max-w-screen-xl  bg-white  border-2 border-gray-300 rounded-xl   ">
                                         <form className="w-full   grid lg:grid-cols-2 grid-cols-1 md:gap-5 bg-gradient-to-br to-[#e7f3ec] p-3   md:p-6 rounded-xl via-[#f8fafc] from-[#ffffff]" ngNativeValidate onSubmit={handleSubmit}>
                                             <div className=' '>
