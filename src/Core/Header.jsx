@@ -130,7 +130,7 @@ const Header = () => {
       </div> */}
       <section
         // className={`md:bg-white  md:border-b-4  border-b-[#14AE5C]  ${menuOpen ? " block" : " md:block hidden"}`}
-        className={`md:bg-white  md:border-b-4  border-b-[#14AE5C] fixed top-0 right-0 h-full w-64   z-40      ${menuOpen ? "translate-x-0 duration-300" : "translate-x-full duration-300"
+        className={`md:bg-white  md:border-b-2  border-b-[#14AE5C] fixed top-0 right-0 h-full w-64   z-40      ${menuOpen ? "translate-x-0 duration-300" : "translate-x-full duration-300"
           } md:block md:relative md:w-auto md:translate-x-0`}  >
         <header className="max-w-[90rem] mx-auto md:px-5 px-2 bg-white   h-full ">
           <div className="flex   md:justify-between  justify-center items-center  ">
