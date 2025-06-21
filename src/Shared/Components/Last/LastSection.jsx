@@ -45,7 +45,7 @@ function LastSection() {
                             Join leading researchers, academics, and industry experts from around the world. Be part of the future of Big Data and Cloud innovation.</p>
                         <div className="text-center">
                             <Link to='/paper-submission'>
-                                <button className="py-2 bg-[#14AE5C] px-6 text-white mx-auto cursor-pointer md:text-lg   hover:border border   text-sm hover:duration-300 hover:border-[#F2CB51] border-[#F2CB51] hover:border-dashed">Register</button>
+                                <button className="py-2 bg-[#14AE5C] px-6 rounded-full text-white mx-auto cursor-pointer md:text-lg   hover:border border   text-sm hover:duration-300 hover:border-[#F2CB51] border-[#F2CB51] hover:border-dashed">Register</button>
                             </Link>
                         </div>
                     </div>

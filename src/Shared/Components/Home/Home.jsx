@@ -82,7 +82,7 @@ export const Home = () => {
               </Link> */}
               <Link to="/contact">
                 <button className="py-2 bg-[#14AE5C]
-                 px-6 text-white duration-300 md:text-base text-sm cursor-pointer md:w-[170px] hover:border border hover:duration-300 hover:border-[#F2CB51] border-[#F2CB51] hover:border-dashed">
+                 px-6 text-white duration-300 md:text-base text-sm cursor-pointer md:w-[170px] rounded-full hover:border border hover:duration-300 hover:border-[#F2CB51] border-[#F2CB51] hover:border-dashed">
                   Register Now
                 </button>
               </Link>
@@ -115,7 +115,7 @@ export const Home = () => {
                   We are pleased to welcome researchers, academicians, industry professionals, and students from around the world to the International Conference on Big Data and Cloud Computing (ICBDCC)—a globally recognized platform dedicated to the advancement of knowledge and innovation in the fields of big data and cloud technologies. ICBDCC serves as a convergence point for thought leaders, domain experts, and emerging scholars to share novel insights, discuss transformative research, and explore pioneering solutions that drive the future of intelligent systems and scalable computing. The conference encourages interdisciplinary collaboration and high-quality contributions that address both theoretical frameworks and real-world applications across a spectrum of critical areas including data analytics, distributed computing, cloud-native architectures, edge and fog computing, machine learning, cybersecurity, and scalable storage systems.
                 </p>
                 <Link to='/about' className="w-fit mx-auto   md:mx-0">
-                  <button className=" py-2 bg-[#14AE5C] px-6  hover:border border md:text-base text-sm hover:duration-300 hover:border-[#F2CB51] border-[#F2CB51] hover:border-dashed text-white  duration-300 cursor-pointer">
+                  <button className=" py-2 bg-[#14AE5C] px-6  hover:border rounded-full border md:text-base text-sm hover:duration-300 hover:border-[#F2CB51] border-[#F2CB51] hover:border-dashed text-white  duration-300 cursor-pointer">
                     Read More
                   </button>
                 </Link>

@@ -156,7 +156,7 @@ const Header = () => {
                       )}
                     </Link>
                     {hoveredCategory === link.label && link.dropdown && (
-                      <div className="md:absolute left-0 top-full md:w-[260px] md:bg-white  border-[#1B1F3B]  transition-all duration-300 ease-in-out opacity-100 scale-y-100 origin-top  grid md:grid-cols-1 border md:p-3 z-10">
+                      <div className="md:absolute left-0 top-full md:w-[260px] rounded-xl md:bg-white  border-[#1B1F3B]  transition-all duration-300 ease-in-out opacity-100 scale-y-100 origin-top  grid md:grid-cols-1 border md:p-3 z-10">
                         {link.dropdown.map((dropdownlink) => (
                           <Link key={dropdownlink.to} to={dropdownlink.to} className="block md:px-4 px-2 py-2 md:text-[#1B1F3B] md:text-start text-center underline underline-offset-2 text-[#1B1F3B]" onClick={() => { setHoveredCategory(null); setMenuOpen(false); }} >
                             {dropdownlink.label}
