@@ -78,7 +78,7 @@ function Abstracting() {
                                 New Paper Submission
                             </h1>
                         </div>
-                        <div className='grid lg:grid-cols-3 gap-4  items-center'>
+                        <div className='grid lg:grid-cols-3 md:gap-4  gap-4 items-center'>
                             <div className="grid grid-cols-1 md:grid-cols-1 gap-6    mx-auto  ">
                                 {/* Submission Guidelines */}
                                 <div className="bg-white md:p-5 p-3 rounded-lg border-l-4 border-[#14AE5C] shadow-sm">

@@ -148,7 +148,7 @@ const Header = () => {
                     // onMouseLeave={handleMouseLeave}
                     onMouseEnter={() => window.innerWidth >= 768 && handleMouseEnter(link.label)}
                     onMouseLeave={() => window.innerWidth >= 768 && handleMouseLeave()}   >
-                    <Link to={link.to} className={`   text-[#1B1F3B]  py-4 flex lg:w-[144px] md:w-[130px] transition-all duration-300 ease-in-out    lg:text-base md:text-sm justify-center items-center gap-2 ${isActive(link.to) || hoveredCategory === link.label ? ' md:border-t-8 border-t-[#14AE5C] duration-300  text-[#1B1F3B] ' : 'bg-white'} `}
+                    <Link to={link.to} className={`   text-[#1B1F3B]  py-4 flex lg:w-[144px] md:w-[130px] transition-all duration-300 ease-in-out    lg:text-base md:text-sm justify-center items-center gap-2 ${isActive(link.to) || hoveredCategory === link.label ? 'md:border-t-8 border-t-[#14AE5C] duration-300 text-[#1B1F3B]' : 'bg-white'} `}
                       onClick={(e) => { if (link.dropdown) { e.preventDefault(); setHoveredCategory((prev) => (prev === link.label ? null : link.label)); } else { setMenuOpen(false); } }}   >
                       {link.label}
                       {link.dropdown && (
