@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="text-center md:text-left mx-auto">
             <h4 className="text-lg font-semibold mb-2">Contact</h4>
             <ul className="space-y-1 text-sm">
-              <li>Email: <a href="mailto:info@icbdcc.org" className="underline">info@icbdcc.org</a></li>
+              <li>Email: <a href="mailto:info@icbdcc.org" className="underline">info.icbdcc@gmail.com</a></li>
               <li>Location: Chennai, India</li>
             </ul>
           </div>

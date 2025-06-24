@@ -21,7 +21,7 @@ function Contact() {
             formDataToSend.append('email', formData.email);
             formDataToSend.append('number', formData.number);
             formDataToSend.append('message', formData.message);
-            const response = await fetch('http://192.168.29.175/my-react-app/message_mail.php', {
+            const response = await fetch('http://192.168.29.174/my-react-app/message_mail.php', {
                 method: 'POST',
                 body: formDataToSend,
             });

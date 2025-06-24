@@ -106,7 +106,7 @@ export const Home = () => {
                   <img className="w-full h-64 sm:h-80 object-contain" src="/assets/Images/27211.jpg" alt="Conference Visual" />
                   {/* Stronger and always-visible overlay */}
                   <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black/80 to-transparent p-4 flex items-end justify-center text-center">
-                    <p className="text-white text-sm font-medium text-center" data-aos="fade-up"  >Discover Innovations in Big Data & Cloud</p>
+                    <p className="text-white text-sm font-medium text-center" data-aos="fade-up">Discover Innovations in Big Data & Cloud</p>
                   </div>
                 </div>
               </div>

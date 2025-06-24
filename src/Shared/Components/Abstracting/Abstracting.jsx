@@ -37,7 +37,7 @@ function Abstracting() {
                 formDataToSend.append('paper', formData.paper);
             }
 
-            const response = await fetch('http://192.168.29.175/my-react-app/send_mail.php', {
+            const response = await fetch('http://192.168.29.174/my-react-app/send_mail.php', {
                 method: 'POST',
                 body: formDataToSend,
             });

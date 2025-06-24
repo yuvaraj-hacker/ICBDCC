@@ -29,7 +29,7 @@ function Contct() {
                                 <i className="fi fi-ss-envelope text-white flex items-center   text-2xl md:text-3xl "></i>
                             </div>
                             <div className="md:text-lg text-sm">
-                                <p>xxx@icbdcc.com</p>
+                                <p>info.icbdcc@gmail.com</p>
                                 <p>Chennai, India</p>
                             </div>
                         </div>
