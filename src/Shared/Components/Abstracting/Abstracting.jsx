@@ -15,7 +15,14 @@ function Abstracting() {
 
     const handleChange = (e) => {
         if (e.target.type === 'file') {
-            setFormData({ ...formData, [e.target.name]: e.target.files[0] });
+            const file = e.target.files[0];
+            const maxSize = 10 * 1024 * 1024; // 10 MB in bytes
+            if (file && file.size > maxSize) {
+                alert("File size exceeds 10 MB. Please upload a smaller file.");
+                e.target.value = ""; // Clear the file input
+                return;
+            }
+            setFormData({ ...formData, [e.target.name]: file });
         } else {
             setFormData({ ...formData, [e.target.name]: e.target.value });
         }
@@ -190,6 +197,8 @@ function Abstracting() {
                                                     required
                                                     className="w-full p-2 border  border-gray-200 rounded-md border-[#0B4F8E] rounded-lg ring-1 ring-transparent bg-white focus:ring-[#0B4F8E] focus:outline-none"
                                                 />
+                                                <p className=" text-xs mt-3">* Maximum File Size: 10 MB</p>
+
                                             </div>
                                             {uploadFile && (
                                                 <div className="mt-4 bg-white p-3 rounded shadow flex justify-between items-center">
