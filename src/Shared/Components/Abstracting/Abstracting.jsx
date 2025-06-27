@@ -80,13 +80,13 @@ function Abstracting() {
             <section className="max-w-screen-xl mx-auto w-full px-5 2xl:px-0  py-10 md:py-20 ">
                 <div className="lg:flex md:flex  gap-8 ">
                     <div className="max-w-[70rem] mx-auto w-full ">
-                        <div className=' text-center mx-auto flex justify-center md:mb-10 mb-5'>
-                            <h1 className="  text-center py-2 w-fit bg-[#F2CB51] px-6  text-[#1B1F3B] rounded-full  font-semibold  lg:text-2xl   text-lg ">
+                        <div className='text-center mx-auto flex justify-center md:mb-10 mb-5'>
+                            <h1 className="text-center py-2 w-fit bg-[#F2CB51] px-6  text-[#1B1F3B] rounded-full  font-semibold lg:text-2xl text-lg ">
                                 New Paper Submission
                             </h1>
                         </div>
                         <div className='grid lg:grid-cols-3 md:gap-4  gap-4 items-center'>
-                            <div className="grid grid-cols-1 md:grid-cols-1 gap-6    mx-auto  ">
+                            <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mx-auto  ">
                                 {/* Submission Guidelines */}
                                 <div className="bg-white md:p-5 p-3 rounded-lg border-l-4 border-[#14AE5C] shadow-sm">
                                     <h3 className="text-lg md:text-xl font-semibold text-[#14AE5C] mb-3">Submission Guidelines</h3>

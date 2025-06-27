@@ -5,14 +5,14 @@ function Contct() {
         <>
             <section className=" max-w-[90rem] py-10 md:py-20  mx-auto">
                 <div className="flex flex-col gap-4">
-                    <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
+                    <div className="grid md:grid-cols-3 grid-cols-1 gap-10 items-center">
                         <div className="text-center flex flex-col md:gap-4 gap-2">
                             <div className="  px-4 py-4 bg-[#0000ff] w-fit rounded-full mx-auto">
                                 <i className="fi fi-rs-marker text-white flex items-center   text-2xl md:text-3xl " />
                             </div>
                             <div className="md:text-lg text-sm">
-                                <p>International Convention Center</p>
-                                <p>Chennai, India</p>
+                                {/* <p>International Convention Center</p> */}
+                                <p>Beijing, China</p>
                             </div>
                         </div>
                         <div className="text-center flex flex-col md:gap-4 gap-2">
@@ -30,7 +30,7 @@ function Contct() {
                             </div>
                             <div className="md:text-lg text-sm">
                                 <p>info.icbdcc@gmail.com</p>
-                                <p>Chennai, India</p>
+                                {/* <p>Chennai, India</p> */}
                             </div>
                         </div>
                     </div>

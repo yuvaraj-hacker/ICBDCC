@@ -6,17 +6,14 @@ function LastSection() {
         <>
             <section className=" max-w-[90rem] md:py-20 py-10  mx-auto">
                 <div className="flex flex-col gap-4">
-                    <div className="grid md:grid-cols-3 grid-cols-1 gap-5 md:gap-10">
+                    <div className="grid md:grid-cols-3 grid-cols-1 gap-5 md:gap-10 items-center">
                         <div className="text-center flex flex-col md:gap-4 gap-2">
-                            {/* <div className="  px-4 py-4 bg-blue-600 w-fit rounded-full mx-auto">
-                                <i className="fi fi-rs-land-layer-location text-white flex items-center  text-2xl md:text-3xl" />
-                            </div> */}
                             <div className=" px-4 py-4 bg-[#0000ff]  w-fit rounded-full mx-auto">
                                 <i className="fi fi-rs-land-layer-location text-white flex items-center text-2xl md:text-3xl " />
                             </div>
                             <div className="md:text-lg text-sm">
-                                <p>International Convention Center</p>
-                                <p>Chennai, India</p>
+                                {/* <p>International Convention Center</p> */}
+                                <p>Beijing, China</p>
                             </div>
                         </div>
                         <div className="text-center flex flex-col md:gap-4 gap-2">
@@ -34,7 +31,7 @@ function LastSection() {
                             </div>
                             <div className="md:text-lg text-sm">
                                 <p>info.icbdcc@gmail.com</p>
-                                <p>Chennai, India</p>
+                                {/* <p>Chennai, India</p> */}
                             </div>
                         </div>
                     </div>

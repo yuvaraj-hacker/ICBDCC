@@ -59,14 +59,14 @@ export const Home = () => {
                   <div className="detail-title
                   ">Conference Dates</div>
                 </div>
-                <div className="detail-text">May 16–18, 2025</div>
+                <div className="detail-text">September 26–27, 2025</div>
               </div>
               <div className="detail-card md:text-base text-sm md:w-full w-2/4  mx-auto  flex flex-col gap-2">
                 <div className="flex items-center md:gap-4   gap-1">
                   <div className="detail-icon">🌏</div>
                   <div className="detail-title">Location</div>
                 </div>
-                <div className="detail-text">Singapore</div>
+                <div className="detail-text">Beijing, China</div>
               </div>
               {/* <div className="detail-card">
                 <div className="detail-icon">🎯</div>

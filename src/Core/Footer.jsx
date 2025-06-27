@@ -8,8 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 
           {/* Brand Section */}
-          <div className="text-center md:text-left mx-auto">
-            <h3 className="text-2xl font-bold mb-2">ICBDCC</h3>
+          <div className="text-center  md:text-left mx-auto flex flex-col gap-4">
+            {/* <h3 className="text-2xl font-bold mb-2">ICBDCC</h3> */}
+            <img className='w-40 mx-auto md:mx-0 bg-white p-2 rounded-md'  src="/assets/Images/ICBDCC.png" alt="" />
             <p className="text-sm text-gray-200">
               International Conference on Big Data and Cloud Computing.
             </p>
@@ -39,7 +40,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-2">Contact</h4>
             <ul className="space-y-1 text-sm">
               <li>Email: <a href="mailto:info@icbdcc.org" className="underline">info.icbdcc@gmail.com</a></li>
-              <li>Location: Chennai, India</li>
+              <li>Location: Beijing, China</li>
             </ul>
           </div>
         </div>
