@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="text-center  md:text-left mx-auto flex flex-col gap-4">
             {/* <h3 className="text-2xl font-bold mb-2">ICBDCC</h3> */}
-            <img className='w-40 mx-auto md:mx-0 bg-white p-2 rounded-md'  src="/assets/Images/ICBDCC.png" alt="" />
+            <img className='w-40 mx-auto md:mx-0 bg-white p-2 rounded-md'  src="/assets/Images/ICBDCC.png" alt="" loading='lazy' />
             <p className="text-sm text-gray-200">
               International Conference on Big Data and Cloud Computing.
             </p>

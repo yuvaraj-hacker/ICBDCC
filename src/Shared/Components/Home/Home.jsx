@@ -43,7 +43,7 @@ export const Home = () => {
         <div className="absolute inset-0 bg-black opacity-55"></div>
         <section className="relative z-10 grid md:grid-cols-2 grid-cols-1 gap-5 md:py-10 items-center max-w-[90rem] py-5 md:px-5 px-3 mx-auto">
           <div className="">
-            <img src="/assets/Images/renamed.png" className="mx-auto md:w-auto w-56" alt="Conference Logo" />
+            <img src="/assets/Images/renamed.png" className="mx-auto md:w-auto w-56" alt="Conference Logo" loading='lazy' />
           </div>
           <div className="flex flex-col justify-evenly md:gap-5 gap-3 text-white">
             <button className="md:py-2 py-1 rounded-full bg-[#F2CB51] font-semibold md:text-base text-xs text-[#1B1F3B] duration-300 md:w-[170px] w-[100px]">
@@ -101,9 +101,9 @@ export const Home = () => {
                 <h1 className="bg-[#F2CB51] text-[#1B1F3B] text-center w-fit mx-auto rounded-full px-6 py-2 font-semibold lg:text-2xl text-lg">
                   About the Conference
                 </h1>
-                {/* <img className="h-72 mx-auto" src="/assets/Images/27211.jpg" alt="" /> */}
+                {/* <img className="h-72 mx-auto" src="/assets/Images/27211.jpg" alt="" loading='lazy' /> */}
                 <div className="relative max-w-md mx-auto overflow-hidden ">
-                  <img className="w-full h-64 sm:h-80 object-contain" src="/assets/Images/27211.jpg" alt="Conference Visual" />
+                  <img className="w-full h-64 sm:h-80 object-contain" src="/assets/Images/27211.jpg" alt="Conference Visual" loading='lazy' />
                   {/* Stronger and always-visible overlay */}
                   <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black/80 to-transparent p-4 flex items-end justify-center text-center">
                     <p className="text-white text-sm font-medium text-center" data-aos="fade-up">Discover Innovations in Big Data & Cloud</p>

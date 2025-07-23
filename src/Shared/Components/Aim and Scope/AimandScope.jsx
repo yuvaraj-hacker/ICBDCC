@@ -18,7 +18,7 @@ function AimandScope() {
                                 <img
                                     className="h-72 w-full object-cover transform group-hover:scale-105 transition duration-500"
                                     src="/assets/Images/compute.jpg"
-                                    alt="Conference Scope Visual"
+                                    alt="Conference Scope Visual" loading='lazy'
                                 />
                                 {/* Optional overlay or label */}
                                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4">

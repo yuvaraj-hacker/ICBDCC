@@ -12,9 +12,9 @@ function About() {
             <h1 className="bg-[#F2CB51] text-[#1B1F3B] text-center w-fit mx-auto rounded-full px-6 py-2 font-semibold lg:text-2xl text-lg">
               About the Conference
             </h1>
-            {/* <img className="h-72 mx-auto" src="/assets/Images/27211.jpg" alt="" /> */}
+            {/* <img className="h-72 mx-auto" src="/assets/Images/27211.jpg" alt=""  loading='lazy'/> */}
             <div className="relative group max-w-md mx-auto overflow-hidden  ">
-              <img className="h-64 sm:h-80 w-full object-contain transform transition duration-500  scale-105" src="/assets/Images/27211.jpg" alt="Conference Visual" />
+              <img className="h-64 sm:h-80 w-full object-contain transform transition duration-500  scale-105" src="/assets/Images/27211.jpg" alt="Conference Visual" loading='lazy' />
               {/* Optional Overlay Content */}
               <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 opacity-100 transition duration-500">
                 <p className="text-white text-sm font-medium text-center" data-aos="fade-up" >Discover Innovations in Big Data & Cloud</p>

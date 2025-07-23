@@ -8,7 +8,7 @@ function EditTeam({ position, Name, location , dataAos }) {
                     {position}
                 </div>
                 <div className='p-4 text-center'>
-                    <img data-aos={dataAos} src="/assets/Images/members.jpg" className='w-32 mx-auto' alt="" />
+                    <img data-aos={dataAos} src="/assets/Images/members.jpg" className='w-32 mx-auto' alt="" loading='lazy' />
                     <div className='flex flex-col space-y-2'>
                         <p>{Name}</p>
                         <p className="

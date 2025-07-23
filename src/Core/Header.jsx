@@ -89,7 +89,7 @@ const Header = () => {
             <Link to='/'>
               <div className="md:hidden block">
                 {/* ICBDCC */}
-                <img className='w-40' src="/assets/Images/ICBDCC.png" alt="" />
+                <img className='w-40' src="/assets/Images/ICBDCC.png" alt="" loading='lazy' />
               </div>
             </Link>
             <div className={`md:hidden block  ${menuOpen ? "z-50" : ""}`}>
@@ -135,7 +135,7 @@ const Header = () => {
         <header className="max-w-[90rem] mx-auto md:px-5 px-2 bg-white   h-full ">
           <div className="flex   md:justify-between  justify-center items-center  ">
             <Link to='/'>
-              <img className='w-40 md:block hidden' src="/assets/Images/ICBDCC.png" alt="" />
+              <img className='w-40 md:block hidden' src="/assets/Images/ICBDCC.png" alt="" loading='lazy' />
               {/* <div className="text-black font-bold md:block hidden">ICBDCC</div> */}
             </Link>
             <nav ref={dropdownRef}>
