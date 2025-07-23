@@ -39,7 +39,7 @@ function Publication() {
                             },
                             {
                                 date: "01-11-2025",
-                                event: "Last Date for Registration / Payment",
+                                event: "Last Date for Registration",
                             },
                         ].map((item, index) => (
                             <div key={index} className="bg-gray-100 border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition duration-300">

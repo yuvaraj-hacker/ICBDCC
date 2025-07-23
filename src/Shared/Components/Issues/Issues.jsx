@@ -36,6 +36,7 @@ function Issues({ position, Name, location }) {
                 <h1 className="bg-[#F2CB51] text-[#1B1F3B] text-center rounded-full px-4 py-2 w-fit mx-auto font-semibold lg:text-2xl text-lg">
                     Editorial Board
                 </h1>
+                <p className=" text-center md:text-lg">The Board of Editors for the International Conference on Big Data and Cloud Computing (ICBDCC) comprises a distinguished panel of experts, academicians, and industry leaders from diverse domains within big data, cloud computing, and related areas. Their primary responsibility is to oversee the peer review process, uphold publication ethics, and ensure the scholarly quality of all accepted manuscripts. By offering their technical insights and editorial guidance, the board plays a critical role in maintaining the academic integrity and global relevance of the conference proceedings. Their contributions help foster a platform that promotes rigorous research, encourages innovative solutions, and supports knowledge dissemination across the global computing and data science community.</p>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
                     {Tech.map((member, index) => (
                         <Edit key={index} position={member.position} university={member.university} Name={member.Name} location={member.location} />
