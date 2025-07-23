@@ -21,7 +21,7 @@ function LastSection() {
                                 <i className="fi fi-rr-clock text-white flex items-center text-2xl md:text-3xl " />
                             </div>
                             <div className="md:text-lg text-sm">
-                                <p>September 26-27, 2025</p>
+                                <p>November 10, 2025</p>
                                 <p>9:00 AM - 6:00 PM</p>
                             </div>
                         </div>

@@ -29,12 +29,12 @@ export const Home = () => {
   ];
 
   const date = [
-    { Dates: '22-07-2025', Title: 'Full Paper Submission Deadline' },
-    { Dates: '29-07-2025', Title: 'Notification of Decision' },
-    { Dates: '05-08-2025', Title: 'Deadline for Submitting Revised Full Paper' },
-    { Dates: '12-08-2025', Title: 'Notification of Acceptance' },
-    { Dates: '19-08-2025', Title: 'Camera-Ready Paper Submission' },
-    { Dates: '26-08-2025', Title: 'Last Date for Registration / Payment' },
+    { Dates: '29-09-2025', Title: 'Full Paper Submission Deadline' },
+    { Dates: '4-10-2025', Title: 'Notification of Decision' },
+    { Dates: '13-10-2025', Title: 'Deadline for Submitting Revised Full Paper' },
+    { Dates: '20-10-2025', Title: 'Notification of Acceptance' },
+    { Dates: '25-10-2025', Title: 'Camera-Ready Paper Submission' },
+    { Dates: '01-11-2025', Title: 'Last Date for Registration / Payment' },
   ];
 
   return (
@@ -59,7 +59,7 @@ export const Home = () => {
                   <div className="detail-title
                   ">Conference Dates</div>
                 </div>
-                <div className="detail-text">September 26–27, 2025</div>
+                <div className="detail-text">November 10, 2025</div>
               </div>
               <div className="detail-card md:text-base text-sm md:w-full w-2/4  mx-auto  flex flex-col gap-2">
                 <div className="flex items-center md:gap-4   gap-1">
@@ -135,7 +135,7 @@ export const Home = () => {
             </section>
 
             {/* Key Invites Section */}
-            <section className="flex flex-col md:gap-10 gap-5">
+            {/* <section className="flex flex-col md:gap-10 gap-5">
               <h1 className="bg-[#F2CB51] text-[#1B1F3B] text-center rounded-full px-6 py-2 w-fit mx-auto font-semibold lg:text-2xl text-lg">
                 Key Invitees
               </h1>
@@ -150,7 +150,7 @@ export const Home = () => {
                   />
                 ))}
               </div>
-            </section>
+            </section> */}
             {/* <section className=" ">
               <h1 className="bg-[#3E8000] h-[2px] w-full" />
             </section> */}

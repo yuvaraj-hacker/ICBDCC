@@ -14,27 +14,27 @@ function Publication() {
                     <div className="  grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 max-w-7xl mx-auto">
                         {[
                             {
-                                date: "22-07-2025",
+                                date: "29-09-2025",
                                 event: "Full Paper Submission Deadline",
                             },
                             {
-                                date: "29-07-2025",
+                                date: "4-10-2025",
                                 event: "Notification of Decision",
                             },
                             {
-                                date: "05-08-2025",
+                                date: "13-10-2025",
                                 event: "Deadline for Submitting Revised Full Paper",
                             },
                             {
-                                date: "12-08-2025",
+                                date: "20-10-2025",
                                 event: "Notification of Acceptance",
                             },
                             {
-                                date: "19-08-2025",
+                                date: "25-10-2025",
                                 event: "Camera-Ready Paper Submission",
                             },
                             {
-                                date: "26-08-2025",
+                                date: "01-11-2025",
                                 event: "Last Date for Registration / Payment",
                             },
                         ].map((item, index) => (
@@ -45,7 +45,7 @@ function Publication() {
                         ))}
                     </div>
                 </div>
-                <div className=''>
+                {/* <div className=''>
                     <h1 className="bg-[#F2CB51] text-[#1B1F3B] text-center w-fit mx-auto rounded-full px-6 py-2 font-semibold lg:text-2xl text-lg md:mb-10 mb-5">
                         Registration Details
                     </h1>
@@ -80,7 +80,7 @@ function Publication() {
                         </div>
                     </div>
 
-                </div>
+                </div> */}
             </section>
             <section className=" ">
                 <h1 className="bg-[#3E8000] h-[2px] w-full" />
