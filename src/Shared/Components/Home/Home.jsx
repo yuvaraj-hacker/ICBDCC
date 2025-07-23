@@ -34,7 +34,7 @@ export const Home = () => {
     { Dates: '13-10-2025', Title: 'Deadline for Submitting Revised Full Paper' },
     { Dates: '20-10-2025', Title: 'Notification of Acceptance' },
     { Dates: '25-10-2025', Title: 'Camera-Ready Paper Submission' },
-    { Dates: '01-11-2025', Title: 'Last Date for Registration / Payment' },
+    { Dates: '01-11-2025', Title: 'Last Date for Registration' },
   ];
 
   return (
@@ -66,7 +66,7 @@ export const Home = () => {
                   <div className="detail-icon">🌏</div>
                   <div className="detail-title">Location</div>
                 </div>
-                <div className="detail-text">Beijing, China</div>
+                <div className="detail-text">Penang, Malaysia</div>
               </div>
               {/* <div className="detail-card">
                 <div className="detail-icon">🎯</div>
@@ -133,6 +133,8 @@ export const Home = () => {
                 </p>
               </div>
             </section>
+
+
 
             {/* Key Invites Section */}
             {/* <section className="flex flex-col md:gap-10 gap-5">

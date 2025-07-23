@@ -7,11 +7,18 @@ function Publication() {
         <>
             <section className="flex flex-col md:gap-20 gap-10   max-w-[90rem] py-10 md:py-20  mx-auto md:px-5 px-3">
                 <div className=''>
-                    <h1 className="bg-[#F2CB51] text-[#1B1F3B] text-center w-fit mx-auto rounded-full px-6 py-2 font-semibold lg:text-2xl text-lg md:mb-10 mb-5">
+                    <h1 className="bg-[#F2CB51] text-[#1B1F3B] text-center w-fit mx-auto rounded-full px-6 py-2 font-semibold lg:text-2xl text-lg md:mb-5 mb-5">
                         Key Dates
                     </h1>
+                    <p className=" text-center  mb-4">
+                        We invite researchers, scholars, and industry professionals to mark their calendars for the important dates associated with <strong>ICBDCC 2025</strong>. Timely submissions and registrations are essential to ensure smooth participation in the conference.
+                        Authors are encouraged to prepare high-quality, original submissions aligned with the themes of Big Data, Cloud Computing, and their interdisciplinary applications. The conference committee has outlined the following important deadlines to guide your participation.
+                        Kindly adhere to these dates to benefit from early reviews, publication opportunities, and smooth registration. Please note that deadlines will be strictly enforced to maintain the integrity and quality of the conference.
 
-                    <div className="  grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 max-w-7xl mx-auto">
+                    </p>
+
+
+                    <div className="  grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-2 md:px-0 max-w-[85rem] mx-auto">
                         {[
                             {
                                 date: "29-09-2025",

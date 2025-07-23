@@ -12,7 +12,7 @@ function Contct() {
                             </div>
                             <div className="md:text-lg text-sm">
                                 {/* <p>International Convention Center</p> */}
-                                <p>Beijing, China</p>
+                                <p>Penang, Malaysia</p>
                             </div>
                         </div>
                         <div className="text-center flex flex-col md:gap-4 gap-2">
