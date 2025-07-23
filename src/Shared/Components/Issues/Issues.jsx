@@ -5,16 +5,16 @@ import LastSection from '../Last/LastSection';
 
 function Issues({ position, Name, location }) {
     const Tech = [
-        { Name: 'R. Gayathri', position: 'Department of Computer Science & Engineering', university: 'PSNA College of Engineering & Technology', location: 'India' },
-        { Name: 'A. Antonidoss', position: 'Department of Computer Science & Business Systems', university: 'Hindustan Institute of Technology', location: 'India' },
-        { Name: 'Mujtaba Korai', position: 'Department of Computer Science & Engineering', university: 'Gachon University', location: 'South Korea' },
+        { Name: 'R. Gayathri', position: 'Department of Computer Science and Engineering', university: 'PSNA College of Engineering & Technology', location: 'India' },
+        { Name: 'A. Antonidoss', position: 'Department of Computer Science and Business Systems', university: 'Hindustan Institute of Technology', location: 'India' },
+        { Name: 'Mujtaba Korai', position: 'Department of Computer Science and Engineering', university: 'Gachon University', location: 'South Korea' },
         { Name: 'C. Karthik', position: 'Department of Mechatronics Engineering', university: 'Jyothi Engineering College', location: 'India' },
         { Name: 'Ali Rizwan', position: 'Department of Industrial Engineering', university: 'King Abdulaziz University', location: 'Saudi Arabia' },
         { Name: 'Alamu Olumide', position: 'Department of Electrical and Electronics Engineering', university: 'University of Lagos', location: 'Nigeria' },
-        { Name: 'V. Mageshwari', position: 'Department of Computer Science & Engineering', university: 'PSGR Krishnammal College for Women', location: 'India' },
-        { Name: 'K. Karthika', position: 'Department of Computer Science & Engineering', university: 'Sri Sairam College of Engineering', location: 'India' },
+        { Name: 'V. Mageshwari', position: 'Department of Computer Science and Engineering', university: 'PSGR Krishnammal College for Women', location: 'India' },
+        { Name: 'K. Karthika', position: 'Department of Computer Science and Engineering', university: 'Sri Sairam College of Engineering', location: 'India' },
         { Name: 'Huiliang Zhao', position: 'Department of Product Design', university: 'Guizhou Minzu University', location: 'China' },
-        { Name: 'D. Angeline Benitta', position: 'Department of computer Applications', university: 'Hindustan Institute of Technology and Science', location: 'India' },
+        { Name: 'D. Angeline Benitta', position: 'Department of Computer Applications', university: 'Hindustan Institute of Technology and Science', location: 'India' },
         { Name: 'G. Vinodhini', position: 'Department of Information Technology', university: 'Annamalai University', location: 'India' },
         { Name: 'M. Sathish kumar', position: 'Department of Computer Application', university: 'Hindustan Institute of Technology and Science', location: 'India' },
         { Name: 'Asad Aziz', position: 'Department of Geography', university: 'University of Gujrat', location: 'Pakistan' },
@@ -24,14 +24,11 @@ function Issues({ position, Name, location }) {
         { Name: 'P. Tamizharasi', position: 'Department of Electrical and Electronics Engineering', university: 'Adhiparasakthi Engineering College', location: 'India' },
         { Name: 'T. Kalaikumaran', position: 'Department of Artificial Intelligence and Data Science', university: 'VSB College of Engineering Technical Campus', location: 'India' },
         { Name: 'Badamasi Sani Mohammed', position: 'Department of Economics', university: 'Al-Qalam University Katsina', location: 'Nigeria' },
-        { Name: 'T. Ananth Kumar', position: 'Department of Computer Science & Engineering', university: 'IFET College of Engineering', location: 'India' },
-
+        { Name: 'T. Ananth Kumar', position: 'Department of Computer Science and Engineering', university: 'IFET College of Engineering', location: 'India' },
         { Name: 'Awder Omar Abdulqadir', position: 'Department of Mathematical Physics', university: 'University of Halabja', location: 'Iraq' },
-        { Name: 'S. Gopinath', position: 'Department of Computer Science & Engineering', university: 'Gnanamani College of Technology', location: 'India' },
+        { Name: 'S. Gopinath', position: 'Department of Computer Science and Engineering', university: 'Gnanamani College of Technology', location: 'India' },
         { Name: 'Sakthivel Velusamy', position: ' Department of Aerospace Information Engineering', university: 'Konkuk University', location: 'South Korea' },
-        { Name: 'Nguyen Van Thieu', position: 'Department of Computer Science & Engineering', university: 'PHENIKAA University', location: 'Viet Nam' },
-
-
+        { Name: 'Nguyen Van Thieu', position: 'Department of Computer Science and Engineering', university: 'Phenikaa University', location: 'Vietnam' },
     ];
     return (
         <>

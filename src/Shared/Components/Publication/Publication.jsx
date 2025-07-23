@@ -14,10 +14,7 @@ function Publication() {
                         We invite researchers, scholars, and industry professionals to mark their calendars for the important dates associated with <strong>ICBDCC 2025</strong>. Timely submissions and registrations are essential to ensure smooth participation in the conference.
                         Authors are encouraged to prepare high-quality, original submissions aligned with the themes of Big Data, Cloud Computing, and their interdisciplinary applications. The conference committee has outlined the following important deadlines to guide your participation.
                         Kindly adhere to these dates to benefit from early reviews, publication opportunities, and smooth registration. Please note that deadlines will be strictly enforced to maintain the integrity and quality of the conference.
-
                     </p>
-
-
                     <div className="  grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-2 md:px-0 max-w-[85rem] mx-auto">
                         {[
                             {
