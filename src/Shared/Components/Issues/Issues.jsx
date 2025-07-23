@@ -29,7 +29,6 @@ function Issues({ position, Name, location }) {
         { Name: 'G. Vinodhini', position: 'Department of Information Technology', university: 'Annamalai University', location: 'India' },
         { Name: 'Nguyen Van Thieu', position: 'Department of Computer Science and Engineering', university: 'Phenikaa University', location: 'Vietnam' },
         { Name: 'T. Ananth Kumar', position: 'Department of Computer Science and Engineering', university: 'IFET College of Engineering', location: 'India' },
-
     ];
     return (
         <>
