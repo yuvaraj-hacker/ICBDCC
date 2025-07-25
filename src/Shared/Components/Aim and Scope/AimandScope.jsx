@@ -29,7 +29,7 @@ function AimandScope() {
 
                         <div className="col-span-3 flex flex-col space-y-4">
                             <p className="text-justify md:text-base text-sm leading-7">
-                                The International Conference on Big Data and Cloud Computing (ICBDCC)
+                                The International Conference on Big Data and Cloud Computing 
                                 aims to provide a comprehensive platform for researchers, practitioners,
                                 and academicians to explore the vast and evolving landscape of data-centric
                                 and cloud-based technologies. The scope of the conference encompasses

@@ -23,7 +23,7 @@ function About() {
           </div>
           <div className="col-span-3 flex flex-col space-y-4">
             <p className="text-justify md:text-base text-sm leading-7">
-              The International Conference on Big Data and Cloud Computing (ICBDCC) is a premier academic platform dedicated to bringing together leading researchers, academicians, industry professionals, and students to share their knowledge and insights on recent advances in Big Data, Cloud Computing, and related technologies.
+              The International Conference on Big Data and Cloud Computing is a premier academic platform dedicated to bringing together leading researchers, academicians, industry professionals, and students to share their knowledge and insights on recent advances in Big Data, Cloud Computing, and related technologies.
             </p>
             <p className="text-justify md:text-base text-sm leading-7">
               ICBDCC provides a dynamic forum for discussing cutting-edge innovations, challenges, and future trends in the data-driven world. The conference fosters collaboration and promotes interdisciplinary research across key areas such as artificial intelligence, machine learning, Internet of Things (IoT), edge/fog computing, cybersecurity, and data analytics.            </p>
@@ -33,11 +33,11 @@ function About() {
           <h1 className="bg-[#F2CB51] text-[#1B1F3B] text-center w-fit mx-auto rounded-full px-6 py-2 font-semibold lg:text-2xl text-lg md:mb-10 mb-5" >
             Scope of the Conference
           </h1>
-          <div className="  mx-auto   text-justify text-gray-700 space-y-4 text-sm md:text-base leading-7">
+          <div className="  mx-auto   text-justify  space-y-4 text-sm md:text-base leading-7">
             <p className='leading-7'>
-              The International Conference on Big Data and Cloud Computing (ICBDCC) aims to explore the transformative impact of big data technologies and cloud infrastructure on various domains. The conference provides a global platform for researchers, academicians, and professionals to present and discuss innovative advancements, practical applications, and future trends.
+              The International Conference on Big Data and Cloud Computing aims to explore the transformative impact of big data technologies and cloud infrastructure on various domains. The conference provides a global platform for researchers, academicians, and professionals to present and discuss innovative advancements, practical applications, and future trends.
             </p>
-            <ul className="list-disc list-inside space-y-2">
+            <ul className="list-disc list-inside space-y-2 text-gray-700">
               <li>
                 Big Data frameworks, tools, and platforms for real-time and batch processing.
               </li>

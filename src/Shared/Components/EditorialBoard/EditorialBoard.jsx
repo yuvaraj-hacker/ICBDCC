@@ -58,8 +58,8 @@ function EditorialBoard({ position, Name, location }) {
                         />
                     ))}
                 </div> */}
-                <div className='md:text-lg text-sm'>
-                    The Organizing Committee of the International Conference on Big Data and Cloud Computing (ICBDCC) comprises distinguished academicians, industry experts, and research professionals dedicated to ensuring the success of the conference. Their commitment is instrumental in coordinating logistics, managing submissions, ensuring quality review processes, and creating a rich technical and cultural experience for all attendees.
+                <div className='md:text-base text-sm'>
+                    The Organizing Committee of the International Conference on Big Data and Cloud Computing comprises distinguished academicians, industry experts, and research professionals dedicated to ensuring the success of the conference. Their commitment is instrumental in coordinating logistics, managing submissions, ensuring quality review processes, and creating a rich technical and cultural experience for all attendees.
                 </div>
                 <section id="organizing-committee" class=" ">
                     <div class=" mx-auto">
