@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 function Contact() {
 
-    const [formData, setFormData] = useState({ name: "", email: "", number: "", message: "" });
+    const [formData, setFormData] = useState({ firstname: "", email: "", number: "", message: "" });
     const [status, setStatus] = useState('');
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,11 +17,11 @@ function Contact() {
         setStatus('Sending...');
         try {
             const formDataToSend = new FormData();
-            formDataToSend.append('name', formData.name);
+            formDataToSend.append('firstname', formData.firstname);
             formDataToSend.append('email', formData.email);
             formDataToSend.append('number', formData.number);
             formDataToSend.append('message', formData.message);
-            const response = await fetch('http://192.168.29.174/my-react-app/message_mail.php', {
+            const response = await fetch('https://icbdcc.com/api/message_mail.php', {
                 method: 'POST',
                 body: formDataToSend,
             });
@@ -30,12 +30,12 @@ function Contact() {
                 const result = await response.text();
                 setStatus(result);
                 setFormData({
-                    name: '',
+                    firstname: '',
                     email: '',
                     number: '',
                     message: '',
                 });
-                toast.success("Paper submitted successfully!");
+                toast.success("submitted successfully!");
                 console.log("success")
             } else {
                 setStatus('Failed to send submission. Please try again.');
@@ -52,7 +52,7 @@ function Contact() {
     return (
         <>
             <section className='bg-gradient-to-br to-[#e7f3ec] via-[#f8fafc] from-[#ffffff]'>
-                <section className="max-w-screen-xl mx-auto w-full px-5 2xl:px-0     py-10 md:py-20 ">
+                <section className="max-w-screen-xl mx-auto w-full px-5 2xl:px-0  py-10 md:py-20 ">
                     <div className="lg:flex md:flex  gap-8 ">
                         <div className="max-w-full w-full ">
                             <div className="lg:max-w-3xl max-w-xl w-full mx-auto  ">
@@ -68,8 +68,8 @@ function Contact() {
                                                 <label for="email" className="block mb-2 text-sm mt-4 ">
                                                     Name
                                                 </label>
-                                                <input type="text" name="name" id="name"
-                                                    value={formData.name}
+                                                <input type="text" name="firstname" id="firstname"
+                                                    value={formData.firstname}
                                                     onChange={handleChange}
                                                     ngModel className="shadow-sm   border text-sm  rounded-md border-gray-300  focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  mt-4" placeholder="Enter Your Name" required />
                                             </div>
