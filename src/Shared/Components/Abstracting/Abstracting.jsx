@@ -33,68 +33,6 @@ function Abstracting() {
     const [status, setStatus] = useState('');
 
 
-
-    // const handleFileInputChange = (e) => {
-    //     if (e.target.type === 'file') {
-    //         const file = e.target.files[0];
-    //         const maxSize = 10 * 1024 * 1024; // 10 MB in bytes
-    //         if (file && file.size > maxSize) {
-    //             alert("File size exceeds 10 MB. Please upload a smaller file.");
-    //             e.target.value = ""; // Clear the file input
-    //             return;
-    //         }
-    //         setFormData({ ...formData, [e.target.name]: file });
-    //     } else {
-    //         setFormData({ ...formData, [e.target.name]: e.target.value });
-    //     }
-    // };
-
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    //     setStatus('Sending...');
-    //     try {
-    //         const formDataToSend = new FormData();
-    //         formDataToSend.append('Paper_Title', formData.Paper_Title);
-    //         formDataToSend.append('name', formData.name);
-    //         formDataToSend.append('email', formData.email);
-    //         formDataToSend.append('number', formData.number);
-    //         formDataToSend.append('institution', formData.institution);
-    //         formDataToSend.append('Paper_Track', formData.Paper_Track);
-
-    //         if (formData.paper) {
-    //             formDataToSend.append('paper', formData.paper);
-    //         }
-
-    //         const response = await fetch('http://192.168.29.174/my-react-app/send_mail.php', {
-    //             method: 'POST',
-    //             body: formDataToSend,
-    //         });
-
-    //         if (response.ok) {
-    //             const result = await response.text();
-    //             setStatus(result);
-    //             setFormData({
-    //                 Paper_Title: '',
-    //                 name: '',
-    //                 email: '',
-    //                 number: '',
-    //                 institution: '',
-    //                 paper: null,
-    //                 Paper_Track: ''
-    //             });
-    //             document.getElementById('paper').value = '';
-    //             toast.success("Paper submitted successfully!");
-    //             console.log("success")
-    //         } else {
-    //             setStatus('Failed to send submission. Please try again.');
-    //             toast.error('Failed to send submission. Please try again.');
-    //         }
-    //     } catch (error) {
-    //         console.error('Error:', error);
-    //         setStatus('An error occurred. Please try again.');
-    //         toast.error('An error occurred. Please try again.');
-    //     }
-    // };
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus('Sending...');
@@ -161,6 +99,7 @@ function Abstracting() {
                     Paper_Track: '',
                     Paper_File: null,
                 });
+                setFileName('')
                 const fileInput = document.getElementById('Paper_File');
                 if (fileInput) {
                     fileInput.value = '';
@@ -274,7 +213,7 @@ function Abstracting() {
                                                     onChange={handleFileInputChange}
                                                     required
                                                     className="shadow-sm bg-white border  text-black text-sm  border-gray-200 rounded-md    focus:ring-primary-500 focus:border-primary-500 block w-full p-2 mt-4"                                                >
-                                                    <option    >Select Category</option>
+                                                    <option  >Select Category</option>
                                                     <option  >Big Data Analytics</option>
                                                     <option  >Cloud Computing</option>
                                                     <option  >Edge & Fog Computing</option>
@@ -303,6 +242,7 @@ function Abstracting() {
                                                     </label>
                                                 </div> */}
                                                 <input
+                                                    id='Paper_File'
                                                     name='Paper_File'
                                                     accept=".pdf,.doc,.docx"
                                                     type="file"
