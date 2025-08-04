@@ -5,7 +5,7 @@ import HelmetComponent from '../Helmet/HelmetProvider'
 function MalPracticePage() {
     return (
         <>
-            <HelmetComponent title="Malpractice - International Journal of Advanced Trends in Robotics and Automation" />
+            <HelmetComponent title="Malpractice - International Conference on Big-Data and Cloud Computing" />
             <MalPractice />
         </>
     )

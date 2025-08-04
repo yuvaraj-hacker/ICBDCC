@@ -13,7 +13,7 @@ function Plagiarism() {
                                 </h1>
                             </div>
                             <p className="text-justify md:text-base text-sm">
-                                The International Journal of Advanced Trends in Robotics and Automation maintains a strict zero-tolerance policy against plagiarism. All submitted manuscripts undergo rigorous plagiarism screening to ensure academic integrity.
+                                The International Conference on Big-Data and Cloud Computing maintains a strict zero-tolerance policy against plagiarism. All submitted manuscripts undergo rigorous plagiarism screening to ensure academic integrity.
                             </p>                        </section>
 
                         <section className="flex flex-col gap-2">

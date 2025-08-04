@@ -1,19 +1,23 @@
 import { Helmet } from "react-helmet";
 
-const HelmetComponent = ({ title }) => {
+const HelmetComponent = ({ title, canonical }) => {
     return (
         <Helmet>
             <title>{title}</title>
-            <meta name="keywords" content="International Journal of Advanced Trends in Robotics and Automation, IJATRA, Robotics research journals, Automation research journal, Advanced robotics journal, Robotics and automation studies" />
-            <meta name="description" content="The International Journal of Advanced Trends in Robotics and Automation (IJATRA) publishes high-quality research in robotics, automation, AI, and advanced engineering fields." />
-            <meta name="author" content="IJATRA Editorial Team" />
+
+            <meta name="title" content="ICBDCC – International Conference on Big-Data and Cloud Computing" />
+            <meta name="description" content="Join ICBDCC, the International Conference on Big Data and Cloud Computing, to explore the latest research, trends, and innovations in big data analytics and cloud technologies." />
+            <meta name="keywords" content="ICBDCC, Big Data, Cloud Computing, AI Conference, Smart Cities, Federated Learning, Cognitive Systems, Sustainable Technology, Research Conference, Call for Papers" />
+            <meta name="author" content="ICBDCC Organizing Committee" />
             <meta name="robots" content="index, follow" />
+
             <meta property="og:type" content="website" />
-            <meta property="og:title" content="International Journal of Advanced Trends in Robotics and Automation (IJATRA)" />
-            <meta property="og:description" content="The International Journal of Advanced Trends in Robotics and Automation (IJATRA) publishes high-quality research in robotics, automation, AI, and advanced engineering fields." />
-            <meta property="og:url" content="https://www.ijatra.com/" />
-            <meta property="og:image" content="https://www.ijatra.com/assets/Images/IJATRA.png" />
-            <link rel="canonical" href="https://www.ijatra.com/" />
+            <meta property="og:url" content="https://icbdcc.com/" />
+            <meta property="og:title" content="ICBDCC – International Conference on Big-Data and Cloud Computing" />
+            <meta property="og:description" content="Join ICBDCC, the International Conference on Big Data and Cloud Computing, to explore the latest research, trends, and innovations in big data analytics and cloud technologies." />
+            <meta property="og:image" content="https://icbdcc.com/assets/Images/ICBDCC.png" />
+
+            <link rel="canonical" href={canonical} />
             <link rel="icon" type="image/png" href="https://www.ijatra.com/assets/Images/Favicon.png" />
         </Helmet>
     );

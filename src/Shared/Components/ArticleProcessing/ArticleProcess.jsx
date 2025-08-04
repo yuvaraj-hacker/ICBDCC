@@ -13,7 +13,7 @@ function ArticleProcess() {
                                 </h1>
                             </div>
                             <p className="text-justify md:text-base text-sm">
-                                The International Journal of Advanced Trends in Robotics and Automation follows a structured article processing workflow to ensure timely and high-quality publication of research articles.                            </p>
+                                The International Conference on Big-Data and Cloud Computing follows a structured article processing workflow to ensure timely and high-quality publication of research articles.                            </p>
                         </section>
 
                         <section className="flex flex-col gap-2">
