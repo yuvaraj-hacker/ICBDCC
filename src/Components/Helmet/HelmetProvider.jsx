@@ -18,7 +18,7 @@ const HelmetComponent = ({ title, canonical }) => {
             <meta property="og:image" content="https://icbdcc.com/assets/Images/ICBDCC.png" />
 
             <link rel="canonical" href={canonical} />
-            <link rel="icon" type="image/png" href="https://www.ijatra.com/assets/Images/Favicon.png" />
+            <link rel="icon" type="image/png" href="https://icbdcc.com/assets/Images/ICBDCC.png" />
         </Helmet>
     );
 };
